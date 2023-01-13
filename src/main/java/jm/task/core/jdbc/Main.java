@@ -6,8 +6,9 @@ import jm.task.core.jdbc.util.Util;
 
 public class Main {
     public static void main(String[] args) {
-        // реализуйте алгоритм здесь
-        Util.getConnection();
+
+//        Util.getConnection();
+        Util.getSessionFactory();
         UserService userService = new UserServiceImpl();
         userService.createUsersTable();
         userService.saveUser("German", "Kozlov", (byte) 26);
